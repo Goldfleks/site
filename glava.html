@@ -1,0 +1,1028 @@
+    <!DOCTYPE html>  
+    <html lang="ru">  
+    <head>  
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>Направления специальностей УК СибГИУ</title>  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+        <style>  
+            :root {  
+                --primary-color: #4682B4;  
+                --primary-dark: #36648B;  
+                --primary-light: #5D8FC9;  
+                --secondary-color: #F5F5F5;  
+                --text-dark: #333333;  
+                --text-light: #666666;  
+                --white: #FFFFFF;  
+                --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+            }  
+              
+            * {  
+                margin: 0;  
+                padding: 0;  
+                box-sizing: border-box;  
+            font-family: sans-serif;  
+        }  
+              
+            body {  
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b9/%D0%A1%D0%B8%D0%B1%D0%93%D0%98%D0%A3_%D0%BE%D1%81%D0%B5%D0%BD%D1%8C%D1%8E.jpg) ;
+           backdrop-filter: blur(5px);
+                background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+                background-color: #f9f9f9;  
+                color: var(--text-dark);  
+                line-height: 1.6;  
+            }  
+              
+            .container { 
+                font-size: 20px; 
+                max-width: 1200px;  
+                margin: 0 auto;  
+                padding: 0 20px;  
+            }  
+              
+            /* Header Styles */  
+            header {  
+                background: #FFFFFF ;  
+                color: black;  
+                padding: 1rem 0;  
+                position: sticky;  
+                top: 0;  
+                z-index: 1000;  
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+            }  
+      
+            .header-container {  
+                display: flex;  
+                justify-content: space-between;  
+                align-items: center;  
+            }  
+      
+            .logo {  
+                display: flex;  
+                align-items: center;  
+                gap: 15px;  
+            }  
+      
+            .logo-img {  
+                height: 100px;  
+                width: auto;  
+            }  
+      
+            .logo-text h1 {  
+                font-size: 1.4rem;  
+                margin-bottom: 5px;  
+            }  
+      
+            .logo-text p {  
+                font-size: 0.9rem;  
+                opacity: 0.9;  
+            }  
+      
+            nav ul {  
+                display: flex;  
+                list-style: none;  
+                gap: 25px;  
+            }  
+      
+            nav a {  
+                color: black;  
+                text-decoration: none;  
+                font-weight: 600;  
+                font-size: 1rem;  
+                transition: color 0.3s;  
+                padding: 5px 0;  
+                position: relative;  
+            }  
+      
+            nav a:hover {  
+                color: var(--accent-color);  
+            }  
+      
+            nav a::after {  
+                content: '';  
+                position: absolute;  
+                width: 0;  
+                height: 2px;  
+                background: #4682B4;  
+                bottom: 0;  
+                left: 0;  
+                transition: width 0.3s;  
+            }  
+      
+            nav a:hover::after {  
+                width: 100%;  
+            }  
+      
+            .mobile-menu-btn {  
+                display: none;  
+                background: none;  
+                border: none;  
+                color: white;  
+                font-size: 1.5rem;  
+                cursor: pointer;  
+            }  
+      
+            /* Hero Section */  
+            .hero {  
+                background: #4682B4;  
+                background-size: cover;  
+                background-position: center;  
+                color: white;  
+                padding: 5rem 0;  
+                text-align: center;  
+            }  
+      
+            .hero h2 {  
+                font-size: 2.8rem;  
+                margin-bottom: 1rem;  
+            }  
+      
+            .hero p {  
+                font-size: 1.2rem;  
+                max-width: 800px;  
+                margin: 0 auto 2rem;  
+                opacity: 0.95;  
+            }  
+              .cta-button {  
+            display: inline-block;  
+            background-color: #4682B4;  
+            color: white;  
+            padding: 12px 30px;  
+            border-radius: 5px;  
+            text-decoration: none;  
+            font-weight: 600;  
+            font-size: 1.1rem;  
+            transition: all 0.3s;  
+            border: 2px solid white;  
+        }  
+  
+        .cta-button:hover {  
+            background-color: transp;  
+            color: white;  
+            transform: translateY(-3px);  
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  
+        }  
+  .cta-buttonn {  
+            color: black;    
+        }  
+              
+            /* Hero section */  
+            .hero {  
+                background: #4682B4;  
+                background-size: cover;  
+                background-position: center;  
+                color: white;  
+                padding: 80px 0;  
+                text-align: center;  
+            }  
+              
+            .hero h2 {  
+                font-size: 42px;  
+                margin-bottom: 20px;  
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
+            }  
+              
+            .hero p {  
+                font-size: 20px;  
+                max-width: 800px;  
+                margin: 0 auto 30px;  
+            }  
+              
+              
+            /* Специальности */  
+            .specialties {  
+                padding: 80px 0;  
+            }  
+              
+            .section-title {  
+                text-align: center;  
+                margin-bottom: 50px;  
+                color: white;  
+                font-size: 32px;  
+                position: relative;  
+            }  
+              
+            .section-title::after {  
+                content: '';  
+                position: absolute;  
+                bottom: -15px;  
+                left: 50%;  
+                transform: translateX(-50%);  
+                width: 80px;  
+                height: 4px;  
+                background-color: white;  
+            }  
+              
+            .specialties-grid {  
+                display: grid;  
+                gap: 30px;  
+            }  
+              
+            .specialty-card { 
+                margin: 50px;
+                        border-radius: 10px;
+            border-width: 2px;
+            border-style: solid; 
+                background-color: var(--white);  
+                border-radius: 10px;  
+                overflow: hidden;  
+                box-shadow: var(--shadow);  
+                transition: transform 0.3s, box-shadow 0.3s;  
+            }  
+              
+            .specialty-card:hover {  
+                transform: translateY(-10px);  
+                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);  
+            }  
+              
+            .specialty-header {  
+                background-color: var(--primary-color);  
+                color: white;  
+                padding: 20px;  
+                display: flex;  
+                align-items: center;  
+                gap: 15px;  
+            }  
+              
+            .specialty-number {  
+                background-color: white;  
+                color: var(--primary-color);  
+                width: 40px;  
+                height: 40px;  
+                border-radius: 50%;  
+                display: flex;  
+                align-items: center;  
+                justify-content: center;  
+                font-weight: bold;  
+                font-size: 18px;  
+            }  
+              
+            .specialty-title {  
+                font-size: 18px;  
+                font-weight: 600;  
+            }  
+              
+            .specialty-body {  
+                padding: 25px;  
+            }  
+              
+            .specialty-body p {  
+                color: var(--text-light);  
+                margin-bottom: 15px;  
+            }  
+              
+            .specialty-features {  
+                list-style: none;  
+                margin-top: 20px;  
+            }  
+              
+            .specialty-features li {  
+                padding: 8px 0;  
+                border-bottom: 1px dashed #eee;  
+                display: flex;  
+                align-items: center;  
+                gap: 10px;  
+            }  
+              
+            .specialty-features i {  
+                color: var(--primary-color);  
+            }  
+              
+            /* О направлении */  
+            .about-direction {  
+                background-color: var(--secondary-color);  
+                padding: 80px 0;  
+            }  
+              
+            .about-content {  
+                display: flex;  
+                align-items: center;  
+                gap: 50px;  
+            }  
+              
+            .about-text {  
+                flex: 1;  
+            }  
+              
+            .about-text h3 {  
+                color: var(--primary-color);  
+                margin-bottom: 20px;  
+                font-size: 28px;  
+            }  
+              
+            .about-image {  
+                flex: 1;  
+                border-radius: 10px;  
+                overflow: hidden;  
+                box-shadow: var(--shadow);  
+            }  
+              
+            .about-image img {  
+                width: 100%;  
+                height: auto;  
+                display: block;  
+                transition: transform 0.5s;  
+            }  
+              
+            .about-image:hover img {  
+                transform: scale(1.05);  
+            }  
+              
+            /* Контакты */  
+            .contacts {  
+                padding: 80px 0;  
+            }  
+              
+            .contact-info {  
+                display: flex;  
+                justify-content: space-around;  
+                flex-wrap: wrap;  
+                gap: 30px;  
+                margin-top: 40px;  
+            }  
+              
+            .contact-item {  
+                            border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+                text-align: center;  
+                flex: 1;  
+                min-width: 250px;  
+                padding: 25px;  
+                background-color: white;  
+                border-radius: 10px;  
+                box-shadow: var(--shadow);  
+            }  
+              
+            .contact-icon {  
+                background-color: var(--primary-light);  
+                color: white;  
+                width: 60px;  
+                height: 60px;  
+                border-radius: 50%;  
+                display: flex;  
+                align-items: center;  
+                justify-content: center;  
+                margin: 0 auto 20px;  
+                font-size: 24px;  
+            }  
+
+              /* Stats Section */  
+        .stats {  
+            background-color: none;  
+        }  
+  
+        .stats-container {  
+            display: grid;  
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+            gap: 30px;  
+            text-align: center;  
+        }  
+  
+        .stat-item {  
+            background-color: white;
+                        border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+            padding: 30px 20px;  
+        }  
+  
+        .stat-number {  
+            font-size: 3rem;  
+            font-weight: 700;  
+            color: black;  
+            margin-bottom: 10px;  
+        }  
+  
+        .stat-text {  
+            font-size: 1.35rem;  
+            color: #212529;  
+            font-weight: 600;  
+        }  
+            /* Footer */  
+            footer {  
+                background-color: #4682B4;  
+                color: white;  
+                padding: 40px 0 20px;  
+            }  
+              
+            .footer-content {  
+                display: flex;  
+                justify-content: space-between;  
+                flex-wrap: wrap;  
+                gap: 40px;  
+                margin-bottom: 30px;  
+            }  
+              
+            .footer-column {  
+                flex: 1;  
+                min-width: 250px;  
+            }  
+              
+            .footer-column h3 {  
+                font-size: 20px;  
+                margin-bottom: 20px;  
+                position: relative;  
+                padding-bottom: 10px;  
+            }  
+              
+            .footer-column h3::after {  
+                content: '';  
+                position: absolute;  
+                bottom: 0;  
+                left: 0;  
+                width: 40px;  
+                height: 3px;  
+                background-color: white;  
+            }  
+              
+            .footer-links {  
+                list-style: none;  
+            }  
+              
+            .footer-links li {  
+                margin-bottom: 10px;  
+            }  
+              
+            .footer-links a {  
+                color: #ddd;  
+                text-decoration: none;  
+                transition: color 0.3s;  
+            }  
+              
+            .footer-links a:hover {  
+                color: white;  
+            }  
+              
+            .copyright {  
+                text-align: center;  
+                padding-top: 20px;  
+                border-top: 1px solid rgba(255, 255, 255, 0.1);  
+                font-size: 14px;  
+                color: #ddd;  
+            }  
+              
+            /* Адаптивность */  
+            @media (max-width: 992px) {  
+                .about-content {  
+                    flex-direction: column;  
+                }  
+                  
+                .hero h2 {  
+                    font-size: 36px;  
+                }  
+            }  
+              
+            @media (max-width: 768px) {  
+                .header-content {  
+                    flex-direction: column;  
+                    gap: 20px;  
+                }  
+                  
+                nav ul {  
+                    flex-wrap: wrap;  
+                    justify-content: center;  
+                    gap: 20px;  
+                }  
+                  
+                .hero {  
+                    padding: 60px 0;  
+                }  
+                  
+                .hero h2 {  
+                    font-size: 30px;  
+                }  
+                  
+                .hero p {  
+                    font-size: 18px;  
+                }  
+                  
+                .specialties-grid {  
+                display: grid;  
+                gap: 30px;  
+                }   
+            }  
+              
+            @media (max-width: 480px) {  
+                .section-title {  
+                    font-size: 26px;  
+                }  
+                  
+                .specialty-header {  
+                    flex-direction: column;  
+                    text-align: center;  
+                    gap: 10px;  
+                }  
+            }  
+        </style>  
+    </head>  
+    <body>    
+       <!-- Header -->  
+    <header>  
+        <div class="container header-container">  
+            <div class="logo">  
+                <div class="logo-img">  
+                    <img src="https://do.sibsiu.ru/day/pluginfile.php/1/core_admin/logocompact/300x300/1769073419/sibsiu_logo_sign_RGB.jpg" alt="width=90" height="100"></a>
+                    </svg>  
+                </div>  
+                <div class="logo-text">  
+                    <h1>Университетский колледж СибГИУ</h1>  
+                    <p>Сибирский государственный индустриальный университет</p>  
+                </div>  
+            </div>  
+              
+            <button class="mobile-menu-btn" id="mobileMenuBtn">  
+                <i class="fas fa-bars"></i>  
+            </button>  
+              
+            <nav class="desktop-menu">  
+                <ul>
+                     <li><a href="dokidoki.html" class="cta-buttona">Документы для поступления</a></li>  
+                     <li><a href="#contacts" class="cta-buttona">Контакты и подача заявления</a></li>
+                </ul>  
+            </nav>  
+        </div>  
+    </header>  
+          
+        <!-- Hero Section -->  
+        <section class="hero">  
+            <div class="container">  
+                <h2>Образование будущего в УК СибГИУ</h2>  
+                <p>Поступай в 2026 году! Мы готовим специалистов для современных отраслей промышленности с применением передовых технологий обучения
+</p>  
+            </div>  
+        </section>  
+          
+        <!-- Специальности -->  
+        <section id="specialties" class="specialties">  
+            <div class="container">  
+               <h2 class="section-title">Направления</h2>  
+                <div class="specialties-grid">
+                    <!-- Специальность 1 -->  
+                    <div class="specialty-card">  
+                        <b><div class="specialty-header">  
+                            <div class="specialty-number">1</div>  
+                            <div class="specialty-title">08.02.13 Монтаж и эксплуатация внутренних сантехнических устройств, кондиционирования воздуха и вентиляции</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Устанавливают и монтируют системы водоснабжения, канализации, отопления, вентиляции и кондиционирования. Проводят наладку, профилактическое обслуживание и ремонт оборудования. Контролируют герметичность, соблюдение строительных и санитарных норм
+                                 <img src="santechnik.png
+" alt="Фото" style="float: right; margin-left: 15px; max-width: 350px;">
+</p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 2 года 10 месяцев</li>    
+                                <li><i class="fas fa-check"></i> Форма обучения: очная</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>
+                                <li><i class="fas fa-check"></i> Бюджетные места: 25</li>
+                                <li><i class="fas fa-check"></i> Платные места: 5</li>
+                            </ul>  
+                        </div>  
+                    </div>   
+                    <!-- Специальность 2 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">2</div>  
+                            <div class="specialty-title">09.01.03 Оператор информационных систем - Техническая обработка и размещение информационных ресурсов на сайте</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Готовит, форматирует и публикует текстовый и мультимедийный контент на сайте. Администрирует базовые настройки CMS и следит за актуальностью информации. Обеспечивает корректное отображение и доступность материалов<img src="operator.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 1 года 10 месяцев</li>   
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>
+                                <li><i class="fas fa-check"></i> Форма обучения: очная</li>
+                                <li><i class="fas fa-check"></i> Платные места: 0</li>
+                                <li><i class="fas fa-check"></i> Бюджетные места: 50</li>  
+                            </ul>  
+                        </div>  
+                    </div>  
+             <!-- Специальность 3 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">3</div>  
+                            <div class="specialty-title">09.02.06 Сетевое и системное администрирование - Сетевое и системное администрирование</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p> Проектируют, настраивают и поддерживают локальные и корпоративные сети, серверы и сервисы. Обеспечивают сетевую и информационную безопасность, резервное копирование и мониторинг. Устраняют сбои и сопровождают пользователей <img src="sisa.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 месяцев</li>  
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>
+                                <li><i class="fas fa-check"></i> Форма обучения: очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 15</li>
+                                <li><i class="fas fa-check"></i> Платные места: 15</li>
+                                   
+                            </ul>  
+                        </div>  
+                    </div>
+                      <!-- Специальность4 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">4</div>  
+                            <div class="specialty-title">09.02.11 Разработка и управление программным обеспечением - Разработка и управление программным обеспечением</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p> Разрабатывают, тестируют и внедряют программные продукты. Планируют и координируют процессы разработки, используют системы контроля версий и методологии (Agile, Scrum). Сопровождают и обновляют ПО в эксплуатации<img src="razrarb.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>  
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 30</li>
+                                <li><i class="fas fa-check"></i> Платные места: 70</li>
+                                  
+                            </ul>  
+                        </div>  
+                    </div>  
+                    <!-- Специальность 5 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">5</div>  
+                            <div class="specialty-title">11.02.16 Монтаж, техническое обслуживание и ремонт электронных приборов и устройств</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p> Собирают, настраивают и ремонтируют электронные приборы и устройства. Диагностируют неисправности с помощью измерительной аппаратуры и выполняют пайку и замену компонентов. Проводят профилактическое обслуживание и тестирование работоспособности<img src="elektr.png"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 15</li>
+                                <li><i class="fas fa-check"></i> Платные места: 15</li>
+                                
+                            </ul>  
+</div>
+</div>
+                        <!-- Специальность 6 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">6</div>  
+                            <div class="specialty-title">15.01.22 Чертежник-конструктор</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Разрабатывают рабочие и конструкторские чертежи по техническому заданию. Создают 2D/3D модели и спецификации для изготовления деталей и узлов. Обеспечивают соответствие чертежей стандартам и требованиям производства<img src="chert.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>  
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 0</li>
+                                <li><i class="fas fa-check"></i> Платные места: 25</li>
+                                 
+                            </ul>  
+</div>
+</div>
+                    <!-- Специальность 7 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">7</div>  
+                            <div class="specialty-title">15.02.10 Мехатроника и робототехника (по отраслям) - Мехатроника и робототехника</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Проектируют и интегрируют механические, электрические и программные компоненты роботов и мехатронных систем. Проводят наладку, программирование и диагностику управляющих систем. Обеспечивают эксплуатацию и техническое обслуживание автоматизированных устройств<img src="mechuy.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>   
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 20</li>
+                                <li><i class="fas fa-check"></i> Платные места: 10</li>
+                                    
+                            </ul>  
+  </div>
+  </div>
+                     <!-- Специальность 8 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">8</div>  
+                            <div class="specialty-title">15.02.16 Технология машиностроения</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Разрабатывают технологические процессы изготовления деталей и сборки изделий. Подбирают оборудование, инструменты и режимы обработки. Оптимизируют производство и составляют технологическую документацию<img src="mashina.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 2 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>  
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 15</li>
+                                <li><i class="fas fa-check"></i> Платные места: 15</li>
+                            </ul>  
+                        </div>  
+                    </div>  
+                    <!-- Специальность 9 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">9</div>  
+                            <div class="specialty-title">15.02.17 Монтаж, техническое обслуживание, эксплуатация и ремонт промышленного оборудования (по отраслям)</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Устанавливают и пускают в эксплуатацию промышленное оборудование. Проводят плановое обслуживание, диагностику и ремонт неисправностей. Следят за безопасностью и работоспособностью производственных линий<img src="promokodik.png"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>  
+                                <li><i class="fas fa-check"></i> Форма обучения: очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 20</li>
+                                <li><i class="fas fa-check"></i> Платные места: 10</li>
+                                 
+                            </ul>  
+                        </div>  
+                    </div>
+                      <!-- Специальность 10 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">10</div>  
+                            <div class="specialty-title">15.02.18 Техническая эксплуатация и обслуживание роботизированного производства (по отраслям)</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Обслуживают и поддерживают работу промышленных роботов и автоматизированных линий. Выполняют настройку, профилактику и ремонт мехатроники и систем управления. Контролируют производительность и безопасность роботизированных комплексов<img src="robot.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>  
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 25</li>
+                                <li><i class="fas fa-check"></i> Платные места: 5</li>
+                                 
+                            </ul>  
+                        </div>  
+                    </div>  
+                    <!-- Специальность 11 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">11</div>  
+                            <div class="specialty-title">18.02.12 Технология аналитического контроля химических соединений</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p> Выполняют химический анализ образцов методами титрования, хроматографии, спектроскопии и пр. Обслуживают аналитическое оборудование и интерпретируют результаты. Обеспечивают контроль качества и соответствие нормативам<img src="ANAlitik.jpg"style="float: right; margin-left: 15px; max-width:350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 </li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>
+                                <li><i class="fas fa-check"></i> Бюджетные места: 20</li>
+                                <li><i class="fas fa-check"></i> Платные места:10</li>
+                                
+                            </ul>  
+</div>
+</div>
+                        <!-- Специальность 12 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">12</div>  
+                            <div class="specialty-title">20.02.01 Экологическая безопасность природных комплексов - Экологическая безопасность природных комплексов</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Оценивают воздействие хозяйственной деятельности на окружающую среду. Разрабатывают мероприятия по предотвращению и снижению загрязнений. Проводят мониторинг, составляют отчеты и соблюдают экологические нормы<img src="eko.png"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 2 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>   
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 20</li>
+                                <li><i class="fas fa-check"></i> Платные места: 5</li>
+                               
+                            </ul>  
+</div>
+</div>
+<!-- Специальность 13 -->
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">13</div>  
+                            <div class="specialty-title">21.02.17 Подземная разработка месторождений полезных ископаемых</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Планируют и ведут подземные горные работы, обеспечивают проходку и крепление выработок. Осуществляют организацию взрывных и горных работ, вентиляцию и отвод воды. Контролируют технику безопасности и эксплуатацию горного оборудования<img src="shahta.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>    
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 25</li>
+                                <li><i class="fas fa-check"></i> Платные места: 35</li>
+                            </ul>  
+                        </div>  
+                    </div>   
+<!-- Специальность 14 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">14</div>  
+                            <div class="specialty-title">27.01.01 Контролер измерительных приборов - Контроль измерительных приборов </div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Проверяют и калибруют приборы учета и измерительные средства. Выполняют измерения, фиксируют результаты и оформляют отчетную докумен<img src="controler.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 2 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>  
+                                <li><i class="fas fa-check"></i>Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 0</li>
+                                <li><i class="fas fa-check"></i> Платные места: 45</li>
+                            </ul>  
+                        </div>  
+                    </div> 
+<!-- Специальность 15 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">15</div>  
+                            <div class="specialty-title">27.02.06 Метрологический контроль средств измерений - Метрологический контроль средств измерений</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Организуют метрологическое обеспечение: поверки, калибровки и аттестации средств измерений. Разрабатывают методики контроля и ведут метрологическую документацию. Обеспечивают прослеживаемость и точность измерений в организации<img src="metro.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 2 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>   
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 25</li>
+                                <li><i class="fas fa-check"></i> Платные места: 5</li>
+                            </ul>  
+                        </div>  
+                    </div> 
+<!-- Специальность 16 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">16</div>  
+                            <div class="specialty-title">27.02.07 Управление качеством продукции, процессов и услуг (по отраслям) </div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Внедряют и поддерживают системы менеджмента качества (ISO и др.). Проводят внутренние аудиты, анализ несоответствий и корректирующие меры. Работают над улучшением процессов и удовлетворенностью клиентов<img src="kach.jpg"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 2 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>    
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 15</li>
+                                <li><i class="fas fa-check"></i> Платные места: 15</li>
+                            </ul>  
+                        </div>  
+                    </div> 
+<!-- Специальность 17 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">17</div>  
+                            <div class="specialty-title">38.02.01 Экономика и бухгалтерский учет (по отраслям) </div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Ведут финансовый и налоговый учет, формируют бухгалтерскую отчетность. Проводят экономический анализ деятельности и расчет показателей рентабельности. Работают с учетными программами и готовят данные для принятия управленческих решений<img src="economika.png"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 1 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 11 классов</li>   
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 0</li>
+                                <li><i class="fas fa-check"></i> Платные места: 25</li>
+                            </ul>  
+                        </div>  
+                    </div> 
+<!-- Специальность 18 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">18</div>  
+                            <div class="specialty-title">43.02.16 Туризм и гостеприимство</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Организуют туристические услуги, экскурсии и маршруты, управляют гостиничным и ресторанным сервисом. Обеспечивают обслуживание гостей, бронирование и продажу туров. Работают над клиентским сервисом и продвижением туристических продуктов<img src="tur.png"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 1 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 11 классов</li>   
+                                <li><i class="fas fa-check"></i> Форма обучения: Очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 0</li>
+                                <li><i class="fas fa-check"></i> Платные места: 25</li>
+                            </ul>  
+                        </div>  
+                    </div> 
+<!-- Специальность 19 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-number">19</div>  
+                            <div class="specialty-title">49.02.01 Физическая культура </div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <p>Планируют и проводят тренировки, спортивные занятия и оздоровительные программы. Готовят спортсменов, разрабатывают программы подготовки и реабилитации. Проводят соревнования и занимаются пропаган-дой здорового образа жизни<img src="fizra.png"style="float: right; margin-left: 15px; max-width: 350px;"></p>  
+                            <ul class="specialty-features">  
+                                <li><i class="fas fa-check"></i> Срок обучения: 3 года 10 месяцев</li>
+                                <li><i class="fas fa-check"></i> Основание: 9 классов</li>  
+                                <li><i class="fas fa-check"></i> Форма обучения: очная</li>  
+                                <li><i class="fas fa-check"></i> Бюджетные места: 0</li>
+                                <li><i class="fas fa-check"></i> Платные места: 25</li>
+                            </ul>  
+                        </div>  
+                    </div> 
+                </div>        
+            </div>  
+        </section>  
+                    <!-- Stats Section -->  
+    <section id="stats" class="stats">  
+        <div class="container">  
+            <div class="section-title">  
+            <h2>УК СибГИУ в цифрах</h2>  
+            </div>  
+              
+            <div class="stats-container">  
+                <div class="stat-item">  
+                    <div class="stat-number">7+</div>  
+                    <div class="stat-text">Лет работы</div>  
+                </div>  
+                <div class="stat-item">  
+                    <div class="stat-number">1100+</div>  
+                    <div class="stat-text">Студентов</div>  
+                </div>  
+                <div class="stat-item">  
+                    <div class="stat-number">19</div>  
+                    <div class="stat-text">Направлений подготовки</div> 
+                </div>  
+            </div>  
+        </div>  
+    </section>   
+        <!-- Контакты и подача заявки -->  
+        <section id="contacts" class="contacts">  
+            <div class="container">  
+                <h2 class="section-title">Контакты и подача заявки</h2>  
+                <div class="contact-info">  
+                    <div class="contact-item">  
+                        <div class="contact-icon">  
+                            <i class="fas fa-map-marker-alt"></i>  
+                        </div>  
+                        <h3>Адрес приемной комиссии</h3>  
+                        <p>г. Новокузнецк, пр. Бардина, 25</p> 
+                    </div>  
+                      
+                    <div class="contact-item">
+                        <div>
+                            <img src="https://play-lh.googleusercontent.com/dGLHLJqNX7K7wx-6qE3T_oK3txF33DF585KsQ4p5jf0UCUZ7QdjhS2lFyCfp9YtPbjYFUgnRDC-5Ml7XfSUKt1I" style="max-width: 70px;">
+                        </div>
+                        <h3>Подача заявки</h3>   
+                        <a href="https://www.gosuslugi.ru/"></p>Заявку можно подать на госуслугах</p></a>
+                    </div>  
+                </div>
+            </div>
+        </section> 
+
+        <!-- Footer -->  
+        <footer id="contacts">  
+            <div class="container">  
+                <div class="footer-content">  
+                    <div class="footer-logo">  
+                        <img src="https://do.sibsiu.ru/day/pluginfile.php/1/core_admin/logocompact/300x300/1769073419/sibsiu_logo_sign_RGB.jpg" alt="width=90"height="100"></i>   
+                        </svg>  
+                        <h3>Университетский колледж СибГИУ</h3>  
+                        <p>Сибирский государственный индустриальный университет</p>  
+                    </b>
+                    </div>
+                      
+                    <div class="footer-contact">  
+                        <h3>Контакты приемной комиссии</h3>  
+                         <p><i class="fas fa-map-marker-alt"></i> г. Новокузнецк, ул. Бардина, 25</p>  
+                    <p><i class="fas fa-phone"></i> +7 (3843) 32-89-49</p>  
+                    <p><i class="fas fa-envelope"></i> pr_com@sibsiu.ru</p>  
+                    <p><i class="fas fa-clock"></i> Пн-Чт: 9:00-16:30</p>
+                    <p><i class="fas fa-clock"></i> Пт: 9:00-14:00</p>   
+                          
+                        <div class="social-icons">
+                            <a href="https://vk.com/sibsiu"><i class="fab fa-vk"></i></a>
+                            <a href="https://t.me/sibsiu"><i class="fab fa-telegram"></i></a> 
+                            <a href="https://www.youtube.com/channel/UCFEYtjPqN3LHLsKWfNEKxAQ"><i class="fab fa-youtube"></i></a> 
+                            <a href="https://m.ok.ru/group/64180186317044"><i class="fab fa-odnoklassniki"></i></a>  
+                        </div>  
+                    </div>  
+                </div>  
+                  
+                  
+                <div class="copyright">  
+                    <p>© 2026 Сибирский государственный индустриальный университет. Все права защищены.</p>  
+                </div>  
+            </div>  
+        </footer>  
+          
+        <script>  
+            // Плавная прокрутка к якорям  
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {  
+                anchor.addEventListener('click', function (e) {  
+                    e.preventDefault();  
+                      
+                    const targetId = this.getAttribute('href');  
+                    if (targetId === '#') return;  
+                      
+                    const targetElement = document.querySelector(targetId);  
+                    if (targetElement) {  
+                        window.scrollTo({  
+                            top: targetElement.offsetTop - 80,  
+                            behavior: 'smooth'  
+                        });  
+                    }  
+                });  
+            });  
+              
+            // Анимация появления карточек при прокрутке  
+            const observerOptions = {  
+                threshold: 0.1,  
+                rootMargin: '0px 0px -50px 0px'  
+            };  
+              
+            const observer = new IntersectionObserver((entries) => {  
+                entries.forEach(entry => {  
+                    if (entry.isIntersecting) {  
+                        entry.target.style.opacity = '1';  
+                        entry.target.style.transform = 'translateY(0)';  
+                    }  
+                });  
+            }, observerOptions);  
+              
+            // Применяем анимацию к карточкам специальностей  
+            document.querySelectorAll('.specialty-card').forEach(card => {  
+                card.style.opacity = '0';  
+                card.style.transform = 'translateY(20px)';  
+                card.style.transition = 'opacity 0.5s, transform 0.5s';  
+                observer.observe(card);  
+            });  
+        </script>  
+    </body>  
+    </html>  

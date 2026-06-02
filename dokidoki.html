@@ -1,0 +1,701 @@
+    <!DOCTYPE html>  
+    <html lang="ru">  
+    <head>  
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>Документы для поступления</title>  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+        <style>  
+            :root {  
+                --primary-color: #4682B4;  
+                --primary-dark: #36648B;  
+                --primary-light: #5D8FC9;  
+                --secondary-color: #F5F5F5;  
+                --text-dark: #333333;  
+                --text-light: #666666;  
+                --white: #FFFFFF;  
+                --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+            }  
+              
+            * {  
+                margin: 0;  
+                padding: 0;  
+                box-sizing: border-box;  
+            font-family: sans-serif;  
+        }  
+              
+            body {  
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b9/%D0%A1%D0%B8%D0%B1%D0%93%D0%98%D0%A3_%D0%BE%D1%81%D0%B5%D0%BD%D1%8C%D1%8E.jpg) ;
+           backdrop-filter: blur(5px);
+                background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+                background-color: #f9f9f9;  
+                color: var(--text-dark);  
+                line-height: 1.6;  
+            } 
+              
+            .container {  
+                font-size: 20px;
+                max-width: 1200px;  
+                margin: 0 auto;  
+                padding: 0 20px;  
+            }  
+              
+            /* Header Styles */  
+            header {  
+                background: #FFFFFF ;  
+                color: black;  
+                padding: 1rem 0;  
+                position: sticky;  
+                top: 0;  
+                z-index: 1000;  
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  
+            }  
+      
+            .header-container {  
+                display: flex;  
+                justify-content: space-between;  
+                align-items: center;  
+            }  
+      
+            .logo {  
+                display: flex;  
+                align-items: center;  
+                gap: 15px;  
+            }  
+      
+            .logo-img {  
+                height: 100px;  
+                width: auto;  
+            }  
+      
+            .logo-text h1 {  
+                font-size: 1.4rem;  
+                margin-bottom: 5px;  
+            }  
+      
+            .logo-text p {  
+                font-size: 0.9rem;  
+                opacity: 0.9;  
+            }  
+      
+            nav ul {  
+                display: flex;  
+                list-style: none;  
+                gap: 25px;  
+            }  
+      
+            nav a {  
+                color: black;  
+                text-decoration: none;  
+                font-weight: 600;  
+                font-size: 1rem;  
+                transition: color 0.3s;  
+                padding: 5px 0;  
+                position: relative;  
+            }  
+      
+            nav a:hover {  
+                color: var(--accent-color);  
+            }  
+      
+            nav a::after {  
+                content: '';  
+                position: absolute;  
+                width: 0;  
+                height: 2px;  
+                background: #4682B4;  
+                bottom: 0;  
+                left: 0;  
+                transition: width 0.3s;  
+            }  
+      
+            nav a:hover::after {  
+                width: 100%;  
+            }  
+      
+            .mobile-menu-btn {  
+                display: none;  
+                background: none;  
+                border: none;  
+                color: white;  
+                font-size: 1.5rem;  
+                cursor: pointer;  
+            }  
+      
+            /* Hero Section */  
+            .hero {  
+                background: #4682B4;  
+                background-size: cover;  
+                background-position: center;  
+                color: white;  
+                padding: 5rem 0;  
+                text-align: center;  
+            }  
+      
+            .hero h2 {  
+                font-size: 2.8rem;  
+                margin-bottom: 1rem;  
+            }  
+      
+            .hero p {  
+                font-size: 1.2rem;  
+                max-width: 800px;  
+                margin: 0 auto 2rem;  
+                opacity: 0.95;  
+            }  
+              .cta-button {  
+            display: inline-block;  
+            background-color: #4682B4;  
+            color: white;  
+            padding: 12px 30px;  
+            border-radius: 5px;  
+            text-decoration: none;  
+            font-weight: 600;  
+            font-size: 1.1rem;  
+            transition: all 0.3s;  
+            border: 2px solid white;  
+        }  
+  
+        .cta-button:hover {  
+            background-color: transp;  
+            color: white;  
+            transform: translateY(-3px);  
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  
+        }  
+  .cta-buttonn {  
+            color: black;    
+        }  
+              
+            /* Hero section */  
+            .hero {  
+                background: #4682B4;  
+                background-size: cover;  
+                background-position: center;  
+                color: white;  
+                padding: 80px 0;  
+                text-align: center;  
+            }  
+              
+            .hero h2 {  
+                font-size: 42px;  
+                margin-bottom: 20px;  
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  
+            }  
+              
+            .hero p {  
+                font-size: 20px;  
+                max-width: 800px;  
+                margin: 0 auto 30px;  
+            }  
+              
+              
+            /* Специальности */  
+            .specialties {  
+                padding: 80px 0;  
+            }  
+              
+            .section-title {  
+                text-align: center;  
+                margin-bottom: 50px;  
+                color: white;  
+                font-size: 32px;  
+                position: relative;  
+            }  
+              
+            .section-title::after {  
+                content: '';  
+                position: absolute;  
+                bottom: -15px;  
+                left: 50%;  
+                transform: translateX(-50%);  
+                width: 80px;  
+                height: 4px;  
+                background-color: white;  
+            }  
+              
+            .specialties-grid {  
+                display: grid;  
+                gap: 30px;  
+            }  
+              
+            .specialty-card { 
+                margin: 50px;
+             border-radius: 10px;
+            border-width: 2px;
+            border-style: solid; 
+                background-color: var(--white);  
+                border-radius: 10px;  
+                overflow: hidden;  
+                box-shadow: var(--shadow);  
+                transition: transform 0.3s, box-shadow 0.3s;  
+            }  
+              
+            .specialty-card:hover {  
+                transform: translateY(-10px);  
+                box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);  
+            }  
+              
+            .specialty-header {  
+                background-color: var(--primary-color);  
+                color: white;  
+                padding: 20px;  
+                display: flex;  
+                align-items: center;  
+                gap: 15px;  
+            }  
+              
+            .specialty-number {  
+                background-color: white;  
+                color: var(--primary-color);  
+                width: 40px;  
+                height: 40px;  
+                border-radius: 50%;  
+                display: flex;  
+                align-items: center;  
+                justify-content: center;  
+                font-weight: bold;  
+                font-size: 18px;  
+            }  
+              
+            .specialty-title {  
+                font-size: 18px;  
+                font-weight: 600;  
+            }  
+              
+            .specialty-body {  
+                padding: 25px;  
+            }  
+              
+            .specialty-body p {  
+                color: var(--text-light);  
+                margin-bottom: 15px;  
+            }  
+              
+            .specialty-features {  
+                list-style: none;  
+                margin-top: 20px;  
+            }  
+              
+            .specialty-features li {  
+                padding: 8px 0;  
+                border-bottom: 1px dashed #eee;  
+                display: flex;  
+                align-items: center;  
+                gap: 10px;  
+            }  
+              
+            .specialty-features i {  
+                color: var(--primary-color);  
+            }  
+              
+            /* О направлении */  
+            .about-direction {  
+                background-color: var(--secondary-color);  
+                padding: 80px 0;  
+            }  
+              
+            .about-content {  
+                display: flex;  
+                align-items: center;  
+                gap: 50px;  
+            }  
+              
+            .about-text {  
+                flex: 1;  
+            }  
+              
+            .about-text h3 {  
+                color: var(--primary-color);  
+                margin-bottom: 20px;  
+                font-size: 28px;  
+            }  
+              
+            .about-image {  
+                flex: 1;  
+                border-radius: 10px;  
+                overflow: hidden;  
+                box-shadow: var(--shadow);  
+            }  
+              
+            .about-image img {  
+                width: 100%;  
+                height: auto;  
+                display: block;  
+                transition: transform 0.5s;  
+            }  
+              
+            .about-image:hover img {  
+                transform: scale(1.05);  
+            }  
+              
+            /* Контакты */  
+            .contacts {  
+                padding: 80px 0;  
+            }  
+              
+            .contact-info {  
+                display: flex;  
+                justify-content: space-around;  
+                flex-wrap: wrap;  
+                gap: 30px;  
+                margin-top: 40px;  
+            }  
+              
+            .contact-item {  
+            border-radius: 10px;
+            border-width: 2px;
+            border-style: solid;
+                text-align: center;  
+                flex: 1;  
+                min-width: 250px;  
+                padding: 25px;  
+                background-color: white;  
+                border-radius: 10px;  
+                box-shadow: var(--shadow);  
+            }  
+              
+            .contact-icon {  
+                background-color: var(--primary-light);  
+                color: white;  
+                width: 60px;  
+                height: 60px;  
+                border-radius: 50%;  
+                display: flex;  
+                align-items: center;  
+                justify-content: center;  
+                margin: 0 auto 20px;  
+                font-size: 24px;  
+            }  
+              
+            /* Footer */  
+            footer {  
+                background-color: #4682B4;  
+                color: white;  
+                padding: 40px 0 20px;  
+            }  
+              .footer-contact{
+                font-weight: normal;
+
+            }
+            .footer-content {
+                 font-weight: normal;
+                display: flex;  
+                justify-content: space-between;  
+                flex-wrap: wrap;  
+                gap: 40px;  
+                margin-bottom: 30px;  
+            }  
+              
+            .footer-column {  
+                flex: 1;  
+                min-width: 250px;  
+            }  
+              
+            .footer-column h3 {  
+                font-size: 20px;  
+                margin-bottom: 20px;  
+                position: relative;  
+                padding-bottom: 10px;  
+            }  
+              
+            .footer-column h3::after {  
+                content: '';  
+                position: absolute;  
+                bottom: 0;  
+                left: 0;  
+                width: 40px;  
+                height: 3px;  
+                background-color: white;  
+            }  
+              
+            .footer-links {  
+                list-style: none;  
+            }  
+              
+            .footer-links li {  
+                margin-bottom: 10px;  
+            }  
+              
+            .footer-links a {  
+                color: #ddd;  
+                text-decoration: none;  
+                transition: color 0.3s;  
+            }  
+              
+            .footer-links a:hover {  
+                color: white;  
+            }  
+              
+            .copyright {  
+                text-align: center;  
+                padding-top: 20px;  
+                border-top: 1px solid rgba(255, 255, 255, 0.1);  
+                font-size: 14px;  
+                color: #ddd;  
+            }  
+              
+            /* Адаптивность */  
+            @media (max-width: 992px) {  
+                .about-content {  
+                    flex-direction: column;  
+                }  
+                  
+                .hero h2 {  
+                    font-size: 36px;  
+                }  
+            }  
+              
+            @media (max-width: 768px) {  
+                .header-content {  
+                    flex-direction: column;  
+                    gap: 20px;  
+                }  
+                  
+                nav ul {  
+                    flex-wrap: wrap;  
+                    justify-content: center;  
+                    gap: 20px;  
+                }  
+                  
+                .hero {  
+                    padding: 60px 0;  
+                }  
+                  
+                .hero h2 {  
+                    font-size: 30px;  
+                }  
+                  
+                .hero p {  
+                    font-size: 18px;  
+                }  
+                  
+                .specialties-grid {  
+                    grid-template-columns: 1fr;  
+                }  
+            }  
+              
+            @media (max-width: 480px) {  
+                .section-title {  
+                    font-size: 26px;  
+                }  
+                  
+                .specialty-header {  
+                    flex-direction: column;  
+                    text-align: center;  
+                    gap: 10px;  
+                }  
+            }  
+        </style>  
+    </head>  
+    <body>  
+       <!-- Header -->  
+    <header>  
+        <div class="container header-container">  
+            <div class="logo">  
+                <div class="logo-img">  
+                    <img src="https://do.sibsiu.ru/day/pluginfile.php/1/core_admin/logocompact/300x300/1769073419/sibsiu_logo_sign_RGB.jpg" alt="width=90" height="100"></a></i>
+                    </svg>  
+                </div>  
+                <div class="logo-text">  
+                    <h1>Университетский колледж СибГИУ</h1>  
+                    <p>Сибирский государственный индустриальный университет</p>  
+                </div>  
+            </div>  
+              
+            <button class="mobile-menu-btn" id="mobileMenuBtn">  
+                <i class="fas fa-bars"></i>  
+            </button>  
+              
+            <nav class="desktop-menu">  
+                <ul>
+                     <li><a href="glava.html" class="cta-buttona">Главная страница</a></li>   
+                     <li><a href="#contacts" class="cta-buttona">Контакты и подача заявления</a></li>
+                </ul>  
+            </nav>  
+        </div>  
+    </header>  
+               
+
+        <!-- Ну точно не специальности -->  
+        <section id="specialties" class="specialties">  
+            <div class="container">  
+               <h2 class="section-title">Документы</h2>  
+                <div class="specialties-grid">
+                    <div>
+                    <!-- Специальность 1 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-title">Базовый набор документов для поступления в УК СибГИУ</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <ul class="specialty-features">  
+                                 <li><i class="fas fa-check"></i><b>Паспорт</li>  
+                                 <li><i class="fas fa-check"></i>Фотографии 3х4 (4 шт)</li>  
+                                 <li><i class="fas fa-check"></i>СНИЛС</li>  
+                                 <li><i class="fas fa-check"></i>Документы об образовании</li>  
+                                 <li><i class="fas fa-check"></i>Дипломы олимпиад, спортивных соревнований, о волонтерстве (если есть)</li>  
+                                 <li><i class="fas fa-check"></i>Заявление (заполните у нас в приемной комиссии) </li>  
+                                 <li><i class="fas fa-check"></i> В особых случаях:</li>  
+                                 <li></i>Документы, подтверждающие особые права на зачисление, например, справка о статусе ребёнка-сироты;</li>
+                                 <li></i>Сведения об инвалидности или ограничениях по здоровью, если нужно обеспечить особые условия для сдачи вступительного испытания;</li>
+                                 <li></i>Договор о целевом обучении, если поступаете в рамках целевой квоты.</li>  
+                            </ul>  
+                        </div>  
+                    </div>  
+                    <!-- Специальность 2 -->  
+                    <div class="specialty-card">  
+                        <div class="specialty-header">  
+                            <div class="specialty-title">Порядок заселения в общежитие</div>  
+                        </div>  
+                        <div class="specialty-body">  
+                            <ul class="specialty-features">  
+                                <li></i>Порядок заселения:</li>  
+                                <li>1) При подаче документов в приемную комиссию вы должны были написать заявление о том, что нуждаетесь в общежитии.</li>
+                                <li>2) На основании приказа о предоставлении общежития (после выхода приказа о зачислении) получить ордер в Дирекции студенческого городка: пр-т Бардина, 23, общежитие № 7, кабинет № 108. 
+                                Срок действия ордера 15 дней с момента выдачи. В случае не вселения и отсутствии информации от обучающихся о причинах не вселения, ордер аннулируется (п. 4.1 Положения о студенческом общежитии СибГИУ).</li>
+                                <li>3) В главном корпусе (ул. Кирова, 42) пройти в медпункт, кабинет 375Г, 3 этаж (поставить печать на ордере).
+                                При себе необходимо иметь: 
+                                <li><i class="fas fa-check"></i>Паспорт</li>
+                                <li><i class="fas fa-check"></i>Ордер</li>
+                                <li><i class="fas fa-check"></i>Копию сертификата профилактических прививок</li>
+                                <li><i class="fas fa-check"></i>Копию медицинского полиса</li>
+                                <li><i class="fas fa-check"></i>Справку о прохождении флюорографии</li>
+                                <li><i class="fas fa-check"></i>Результат анализа крови на RW и ВИЧ </li>
+                                <li><i class="fas fa-check"></i>Копию медицинской справки по форме 086У</li>
+
+                                <li>4) Зарегистрировать свои данные в базе бухгалтерии: кабинет 328Г, 3 этаж главного корпуса СибГИУ (ул. Кирова, 42). </li>
+                                <li>5) Оплатить за проживание в приходной кассе 3 этаж главного корпуса СибГИУ (ул. Кирова, 42).</li>
+                                <li>6) Заключить договор найма жилого помещения у паспортиста в студенческом городке, кабинет 107. (пр. Бардина, 23).
+                                При себе необходимо иметь: 
+                                - Паспорт
+                                - Ордер (с печатью медпункта)
+                                - 3 фотографии 3*4
+                                - Квитанцию об оплате за проживание.</li>
+                                <li></i>Для несовершеннолетних студентов обязательно нотариально заверенное согласие родителей (законных представителей) на право заключения ими расторжения договора найма жилого помещения, на самостоятельный вход (выход) за территорию ФГБОУ ВО «СибГИУ», самостоятельный выезд к месту постоянного проживания и посещение родственников. Разрешение органа опеки и попечительства на раздельное проживание с попечителем (для детей из категории детей-сирот и детей, оставшихся без попечения родителей).</li>  
+                                <li><i class="fas fa-check"></i><a href="https://www.sibsiu.ru/upload/medialibrary/a7a/vo4tw5d46zb0eznkhops7wdn9v088btd/%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%B5%D1%86%20%D0%B4%D0%BB%D1%8F%20%D0%BD%D0%B5%D1%81%D0%BE%D0%B2%D0%B5%D1%80%D1%88%D0%B5%D0%BD%D0%BD%D0%BE%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D1%85%20(%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%B4%D0%B6).docx">Образец для несовершеннолетних студентов Университетского колледжа .docx</a></li>
+                                <li></i>Важная информация для студентов 1-го курса и родителей студентов о порядке заключения договора найма жилого помещения и оплаты за проживание в общежитиях СибГИУ
+Для заселения в общежития студгородка со студентами 1-го курса заключается договор найма жилого помещения на время обучения в университете:</li> 
+                                <li>1) Договор найма жилого помещения со студентами 1-го курса (Университетского колледжа), не достигшими 18-ти лет, заполняет один из родителей (законный представитель), при себе необходимо иметь паспорт и согласие родителей. Несовершеннолетние студенты Университетского колледжа заселяются в общежитие № 5, по адресу: ул.Куйбышева,6</li> 
+                                <li>2) Студенты, заключившие договор найма, регистрируются в общежитии по месту пребывания (временная регистрация) </li>
+                                <li>3) При досрочном выезде из общежития (отчисление из университета, уход в академический отпуск, переезд на съёмное жильё и др.) студент обязан заключить дополнительное соглашение о расторжении договора найма жилого помещения с целью прекращения начисления оплаты за проживание в общежитии    </li>
+                                <li>4) Оплата за проживание в общежитиях студгородка производится по семестрам (авансовым платежом)</li>
+                                <li>5) Студенты 1-го курса после получения ордера оплачивают за 1-ый семестр и в срок до 1-го марта производят оплату за 2-ой семестр. Оплата производится за календарный год (включая каникулы)</li>
+                                <li>6) Оплата производится через кассу университета с выдачей кассового чека с указанием фамилии, суммы и даты оплаты. Кассовые чеки остаются на хранении у студентов</li>
+                                <li><i class="fas fa-check"></i><a href="https://www.sibsiu.ru/universitet/podrazdeleniya/otdely/?ELEMENT_ID=236&sphrase_id=620339">
+Студенческий городок</a>находится по адресу: проспект Бардина, 23 (вход с торца здания), каб. №108
+                                <li><i class="fas fa-check"></i>Директор студенческого городка: Затонская Ольга Михайловна</li>
+                                <li><i class="fas fa-check"></i>Контактные телефоны: +7 (3843) 74-87-51; 8-961-717-74-46</li>
+                            </ul>  
+                        </div>  
+                    </div>
+                    </div>
+                </div>
+        </section>  
+          
+        <!-- Контакты и подача заявки -->  
+        <section id="contacts" class="contacts">  
+            <div class="container">  
+                <h2 class="section-title">Контакты и подача заявки</h2>  
+                <div class="contact-info">  
+                    <div class="contact-item">  
+                        <div class="contact-icon">  
+                            <i class="fas fa-map-marker-alt"></i>  
+                        </div>  
+                        <h3>Адрес приемной комиссии</h3>  
+                        <p>г. Новокузнецк, пр. бардина, 25</p>  
+                    </div>  
+                      
+                    <div class="contact-item">
+                        <div>
+                            <img src="https://play-lh.googleusercontent.com/dGLHLJqNX7K7wx-6qE3T_oK3txF33DF585KsQ4p5jf0UCUZ7QdjhS2lFyCfp9YtPbjYFUgnRDC-5Ml7XfSUKt1I" style="max-width: 70px;">
+                        </div>
+                        <h3>Подача заявки</h3>   
+                        <a href="https://www.gosuslugi.ru/"></p>Заявку можно подать на госуслугах</p></a>
+                    </div>
+                    </div>  
+                </div>
+        </section>  
+          
+        <!-- Footer -->  
+        <footer id="contacts">  
+            <div class="container">  
+                <div class="footer-content">  
+                    <div class="footer-logo">  
+                        <img src="https://do.sibsiu.ru/day/pluginfile.php/1/core_admin/logocompact/300x300/1769073419/sibsiu_logo_sign_RGB.jpg" alt="width=90"height="100"></i>   
+                        </svg> 
+                        <p style="font-weight: normal;"> 
+                        <h3>Университетский колледж СибГИУ</h3>  
+                        <p style="font-weight: normal;">Сибирский государственный индустриальный университет</p>  
+                    </div>  
+
+                    <div class="footer-contact">  
+                        <h3>Контакты приемной комиссии</h3>  
+                         <p><i class="fas fa-map-marker-alt"></i> г. Новокузнецк, ул. Бардина, 25</p>  
+                    <p><i class="fas fa-phone"></i> +7 (3843) 32-89-49</p>  
+                    <p><i class="fas fa-envelope"></i> pr_com@sibsiu.ru</p>  
+                    <p><i class="fas fa-clock"></i> Пн-Чт: 9:00-16:30</p>
+                    <p><i class="fas fa-clock"></i> Пт: 9:00-14:00</p>   
+                          
+                        <div class="social-icons">
+                            <a href="https://vk.com/sibsiu"><i class="fab fa-vk"></i></a>
+                            <a href="https://t.me/sibsiu"><i class="fab fa-telegram"></i></a> 
+                            <a href="https://www.youtube.com/channel/UCFEYtjPqN3LHLsKWfNEKxAQ"><i class="fab fa-youtube"></i></a> 
+                            <a href="https://m.ok.ru/group/64180186317044"><i class="fab fa-odnoklassniki"></i></a>  
+                        </div>  
+                    </div>  
+                </div>  
+                  
+                  
+                <div class="copyright">  
+                    <p>© 2026 Сибирский государственный индустриальный университет. Все права защищены.</p>  
+                </div>  
+            </div>  
+        </footer>  
+          
+        <script>  
+            // Плавная прокрутка к якорям  
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {  
+                anchor.addEventListener('click', function (e) {  
+                    e.preventDefault();  
+                      
+                    const targetId = this.getAttribute('href');  
+                    if (targetId === '#') return;  
+                      
+                    const targetElement = document.querySelector(targetId);  
+                    if (targetElement) {  
+                        window.scrollTo({  
+                            top: targetElement.offsetTop - 80,  
+                            behavior: 'smooth'  
+                        });  
+                    }  
+                });  
+            });  
+              
+            // Анимация появления карточек при прокрутке  
+            const observerOptions = {  
+                threshold: 0.1,  
+                rootMargin: '0px 0px -50px 0px'  
+            };  
+              
+            const observer = new IntersectionObserver((entries) => {  
+                entries.forEach(entry => {  
+                    if (entry.isIntersecting) {  
+                        entry.target.style.opacity = '1';  
+                        entry.target.style.transform = 'translateY(0)';  
+                    }  
+                });  
+            }, observerOptions);  
+              
+            // Применяем анимацию к карточкам специальностей  
+            document.querySelectorAll('.specialty-card').forEach(card => {  
+                card.style.opacity = '0';  
+                card.style.transform = 'translateY(20px)';  
+                card.style.transition = 'opacity 0.5s, transform 0.5s';  
+                observer.observe(card);  
+            });  
+        </script>  
+    </body>  
+    </html>  
